@@ -1,0 +1,450 @@
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/openSans/OpenSans.eot');
+  src: url('../fonts/openSans/OpenSans.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/openSans/OpenSans.woff2') format('woff2'),
+  url('../fonts/openSans/OpenSans.ttf') format('truetype'),
+  url('../fonts/openSans/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url('../fonts/openSansSemiBold/OpenSans-Semibold.eot');
+  src: url('../fonts/openSansSemiBold/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/openSansSemiBold/OpenSans-Semibold.woff2') format('woff2'),
+  url('../fonts/openSansSemiBold/OpenSans-Semibold.woff') format('woff'),
+  url('../fonts/openSansSemiBold/OpenSans-Semibold.ttf') format('truetype'),
+  url('../fonts/openSansSemiBold/OpenSans-Semibold.svg#../fonts/openSansSemiBold/OpenSans-Semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans500';
+  src: url('../fonts/museoSans500/MuseoSans500.eot');
+  src: local('☺'), url('../fonts/museoSans500/MuseoSans500.woff') format('woff'), url('../fonts/museoSans500/MuseoSans500.ttf') format('truetype'), url('../fonts/museoSans500/MuseoSans500.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans300';
+  src: url('../fonts/museoSansRounded300/MuseoSansRounded300.eot');
+  src: local('☺'), url('../fonts/museoSansRounded300/MuseoSansRounded300.woff') format('woff'), url('../fonts/museoSansRounded300/MuseoSansRounded300.ttf') format('truetype'), url('../fonts/museoSansRounded300/MuseoSansRounded300.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+}
+
+#container {
+  margin: 0 auto;
+
+  .section {
+    padding: 0 7.1%;
+
+    hr {
+      border-top: 1px solid #D9D9DD;
+      padding: 0 7.1%;
+      margin: 0;
+    }
+
+    &.separator {
+      background-color: #F1F1F1;
+    }
+  }
+
+  .top-bar {
+    background-color: #fff;
+    font-family: "MuseoSans500", Arial, sans-serif;
+
+    .logo-container {
+      padding: 30px;
+
+      img {
+        height: 28px;
+      }
+    }
+
+    .menu-container {
+      text-align: right;
+
+      .menu-item {
+        font-size: 120%;
+        font-weight: bold;
+        padding: 32px 15px;
+        text-transform: uppercase;
+        display: inline-block;
+
+        a {
+          color: #575555;
+        }
+      }
+
+      .menu-action {
+        display: inline;
+
+        a {
+          font-weight: bold;
+          color: #61bfbd;
+
+          button {
+            background-color: #fff;
+            border: 2px solid #61bfbd;
+            border-radius: 2px;
+            font-family: "MuseoSans500",Arial,sans-serif;
+            font-size: 107%;
+            margin-right: -15px;
+            padding: 10px 29px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+    background: url('../images/hero.jpg') no-repeat center center;
+    background-size: cover;
+    //height: 520px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+
+    .hero-title {
+      font-family: "MuseoSans300", Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 440%;
+      padding: 80px 0 20px;
+    }
+
+    .hero-subtitle {
+      font-family: "Open Sans SemiBold", Arial, sans-serif;
+      font-size: 135%;
+      width: 60%;
+      margin: 0 auto;
+      line-height: 1.9;
+
+      &.small {
+        font-size: 111%;
+        line-height: 1.6;
+        width: 58%;
+        padding: 30px 0 25px;
+      }
+    }
+  }
+
+  .events {
+    font-size: 110%;
+    background-color: #F1F2F5;
+    height: 130px;
+    color: #575555;
+
+    .event-container {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .event-title {
+      font-family: "MuseoSans500", Arial, sans-serif;
+      font-size: 130%;
+      line-height: 2;
+
+      .highlight {
+        color: #61BFBD;
+      }
+    }
+    .event-description {
+      font-family: "Open Sans SemiBold", Arial, sans-serif;
+      color: #5A6172;
+      font-size: 107%;
+    }
+    .event-action {
+      float: right;
+
+      a {
+        color: #fff;
+
+        button {
+          font-family: "MuseoSans500", Arial, sans-serif;
+          background-color: #61BFBD;
+          border: 0;
+          padding: 13px 22px;
+          margin-right: -15px;
+          text-transform: uppercase;
+          border-radius: 2px;
+          font-size: 107%;
+        }
+      }
+    }
+  }
+
+  .involved {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "MuseoSans500", Arial, sans-serif;
+    color: #575555;
+
+    .title {
+      font-size: 210%;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .group {
+      text-align: center;
+
+      .group-image {
+        width: 100%;
+        height: 170px;
+        margin-bottom: 14px;
+
+        img {
+          max-height: 73%;
+          max-width: 38%;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .group-title {
+        font-size: 133%;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 17px;
+      }
+      .group-content {
+        color: #5A6172;
+        font-size: 110%;
+        font-family: "Open Sans SemiBold", Arial, sans-serif;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .group-action a {
+        font-weight: bold;
+        color: #61bfbd;
+
+        button {
+          background-color: #fff;
+          border: 2px solid #61bfbd;
+          border-radius: 2px;
+          font-family: "MuseoSans500",Arial,sans-serif;
+          font-size: 107%;
+          margin-right: -15px;
+          padding: 13px 60px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .mission {
+    background-color: #F1F1F1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "MuseoSans500", Arial, sans-serif;
+    color: #575555;
+
+    .title {
+      font-size: 210%;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .subtitle {
+      font-size: 130%;
+      font-weight: bold;
+      text-align: center;
+
+      &.small {
+        font-family: "Open Sans SemiBold", Arial, sans-serif;
+        font-size: 110%;
+        margin-bottom: 29px;
+
+      }
+    }
+
+    .group {
+      text-align: center;
+
+      .group-image {
+        img {
+          border: 10px solid #fff;
+          border-radius: 50%;
+          max-height: 110px;
+          max-width: 110px;
+          position: relative;
+          transform: translateY(50%);
+        }
+      }
+      .group-background {
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 60px 15px 40px;
+      }
+      .group-title {
+        font-size: 133%;
+        font-weight: bold;
+        color: #5DBFC9;
+        margin-bottom: 17px;
+      }
+      .group-content {
+        color: #5A6172;
+        font-size: 110%;
+        font-family: "Open Sans SemiBold", Arial, sans-serif;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .members {
+    background-color: #F1F1F1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "MuseoSans500", Arial, sans-serif;
+    color: #575555;
+
+    .title {
+      font-size: 210%;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .owl-theme .owl-controls .owl-page.active span {
+      background-color: #5BC0C3;
+    }
+
+    .owl-item {
+      height: 100px;
+      text-align: center;
+
+      > div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .img-cancer-research {
+      width: 160px;
+    }
+    .img-compucorp {
+      width: 170px;
+    }
+    .img-kop {
+      width: 118px;
+    }
+    .img-zing {
+      width: 90px
+    }
+    .img-comic-relief {
+      width: 115px
+    }
+  }
+
+  .blog {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Open Sans SemiBold", Arial, sans-serif;
+    color: #5B6171;
+
+    .title {
+      font-size: 210%;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #blog-entries-carousel {
+      .owl-controls {
+        left: 50%;
+        position: absolute;
+        top: 30%;
+        transform: translateX(-50%);
+        width: 110%;
+
+        .owl-prev,
+        .owl-next {
+          color: #61BFBD;
+          background-color: transparent;
+          font-size: 250%;
+        }
+        .owl-prev {
+          float: left;
+        }
+        .owl-next {
+          float: right;
+        }
+      }
+    }
+
+    .blog-entry {
+
+      .blog-entry-title {
+        border-bottom: 1px solid #f1f1f1;
+        color: #61bfbd;
+        font-size: 115%;
+        height: 30px;
+        margin-bottom: 19px;
+      }
+      .blog-entry-content {
+        font-size: 111%;
+        line-height: 1.6;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #f1f1f1;
+      }
+      .blog-entry-footer {
+        font-size: 110%;
+        padding-top: 15px;
+      }
+    }
+  }
+
+  .footer {
+    background-color: #45474C;
+
+    .social-icon-container {
+      height: 90px;
+      text-align: center;
+    }
+
+    hr {
+      border-color: #585A60;
+    }
+
+    .fa {
+      color: #61bfbd;
+      font-size: 150%;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 38px;
+    }
+
+    .copyright {
+      height: 65px;
+      text-align: center;
+      color: #979DB1;
+      font-size: 115%;
+
+      .highlight {
+        color: #5DBFC9;
+      }
+
+      div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
